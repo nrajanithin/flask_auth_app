@@ -1,0 +1,23 @@
+<html> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<title> Login </title> 
+		<style>
+			
+		</style>	 
+	</head> 
+	<body></br></br></br></br></br> 
+		<div align="center" class="container"> 
+            <h2>Login</h2>
+				<form action="{{ url_for('homepage') }}" method="post"> 
+                    <div class="msg"></div>
+                    <label><b>Username</b> </label>
+					<input id="username" name="username" type="text" placeholder="Username" class="textbox" required/></br></br> 
+					<label><b>Password </b></label>
+                    <input id="password" name="password" type="password" placeholder="Password" class="textbox" required/></br></br></br> 
+					<input type="submit" class="btn" value="Sign In"></br></br>
+                    <p class="bottom">Don't have an account?  <a class="bottom" href="{{ url_for('register')}}"> Register Here</a></p> 
+				</form> 
+		</div> 
+	</body> 
+</html> 
